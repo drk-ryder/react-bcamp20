@@ -1,16 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Result from './assignments';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Welcome to React App. This is Assignment Bootcamp 2020.
-        </p>
-        <a
+      {/* <header className="App-header">
+          <h2>Result for Assignments</h2>
+      </header> */}
+      <body className="App-body">
+      <h2>Result for Assignments</h2>
+          <Result markObt="98" />
+          <Result markObt="97" />
+          <Result markObt="94" />
+          <Result markObt="90" />
+          <Result markObt="92" />
+          <Result markObt="96" />
+          <a
           className="App-link"
           href="https://github.com/drk-ryder"
           target="_blank"
@@ -18,7 +24,7 @@ function App() {
         >
           My github
         </a>
-      </header>
+      </body>
     </div>
   );
 }
