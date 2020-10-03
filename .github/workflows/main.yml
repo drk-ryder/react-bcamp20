@@ -29,6 +29,10 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Adding the node_modules folder
         run: npm install
+      
+      # Runs a set of commands using the runners shell
+      - name: Running Build
+        run: npm run build
 
       # Runs a set of commands using the runners shell
       - name: Installing Surge
